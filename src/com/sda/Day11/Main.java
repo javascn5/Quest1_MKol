@@ -52,29 +52,23 @@ public class Main {
 //        System.out.println("Najmniejsza liczba to: " + smallest + " o indeksie: " + smallestIndex);
 //        System.out.println("Najwieksza liczba to: " + largest + " o indeksie: " + largestIndex);
 
-//todo Zad. 6
-        int quantity = 0;
-        int even = 0;
-        int notEven = 0;
+//todo Zad. 6, 7
         int temp;
         Scanner scanner = new Scanner(System.in);
+        LinkedList list = new LinkedList();
 
         do{
             System.out.print("Podaj liczbe: ");
             temp = scanner.nextInt();
             if(temp != 0){
-                quantity++;
-                if(temp % 2 == 0){
-                    even++;
-                } else {
-                    notEven++;
-                }
+                list.add(temp);
             }
         } while (temp != 0);
 
         scanner.close();
-        System.out.println("Liczba wszystkich elementow: " + quantity);
-        System.out.println("Liczba elementow parzysych: " + even);
-        System.out.println("Liczba elementow nieparzysych: " + notEven);
+        System.out.println("Liczba wprowadzonych elementow: " + list.size());
+        list.show();
+        list.showEven();
+        list.showNotEven();
     }
 }
