@@ -53,22 +53,32 @@ public class Main {
 //        System.out.println("Najwieksza liczba to: " + largest + " o indeksie: " + largestIndex);
 
 //todo Zad. 6, 7
-        int temp;
+//        int temp;
+//        Scanner scanner = new Scanner(System.in);
+//        LinkedList list = new LinkedList();
+//
+//        do{
+//            System.out.print("Podaj liczbe: ");
+//            temp = scanner.nextInt();
+//            if(temp != 0){
+//                list.add(temp);
+//            }
+//        } while (temp != 0);
+//
+//        scanner.close();
+//        System.out.println("Liczba wprowadzonych elementow: " + list.size());
+//        list.show();
+//        list.showEven();
+//        list.showNotEven();
+
+//todo Zad. 8
+        String word;
         Scanner scanner = new Scanner(System.in);
-        LinkedList list = new LinkedList();
+        System.out.print("Podaj słowo: ");
+        word = scanner.nextLine();
+        String halfWord = word.substring(0, word.length()/2);
+        System.out.println("Slowo wyswietlone w polowie: " + halfWord);
+        System.out.println("Dlugosc slowa: " + word.length());
 
-        do{
-            System.out.print("Podaj liczbe: ");
-            temp = scanner.nextInt();
-            if(temp != 0){
-                list.add(temp);
-            }
-        } while (temp != 0);
-
-        scanner.close();
-        System.out.println("Liczba wprowadzonych elementow: " + list.size());
-        list.show();
-        list.showEven();
-        list.showNotEven();
     }
 }
