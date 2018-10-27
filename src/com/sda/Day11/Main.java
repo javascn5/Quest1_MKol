@@ -3,7 +3,7 @@ package com.sda.Day11;
 import java.util.Scanner;
 public class Main {
 
-    public static final int NUMBERS = 5;
+    public static final int NUMBERS = 10;
 
     public static void main(String[] args) {
 
@@ -29,5 +29,6 @@ public class Main {
              ) {
             System.out.print(liczby + "\t");
         }
+        System.out.println("\nSrednia: " + (suma / 2));
     }
 }
